@@ -1,0 +1,114 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.hero-container {
+  height: 100vh; /* Full height of the viewport */
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  background-color: #f4f4f4;
+  height: 100%; /* Full height of the parent container */
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  color: #34495e;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #2980b9;
+}
+
+.hero img {
+  max-width: 40%;
+  height: 70%; /* Percentage height of the .hero container */
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em 0;
+}
+
+.feature-card {
+  background-color: #fff;
+  padding: 1em;
+  margin: 10px;
+  text-align: center;
+  flex: 1 1 calc(25% - 20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h2 {
+  font-size: 1.5em;
+  color: #2c3e50;
+}
+
+.feature-card p {
+  font-size: 1em;
+  color: #34495e;
+}
+
+.feature-card button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.feature-card button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Let the height adjust automatically on smaller screens */
+  }
+
+  .hero img {
+    max-width: 100%;
+    height: auto; /* Ensure the image height adjusts automatically */
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}

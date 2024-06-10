@@ -1,0 +1,14 @@
+/* src/css/SketchPage.css */
+.sketch-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #p5-canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
